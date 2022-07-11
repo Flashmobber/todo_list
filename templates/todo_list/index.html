@@ -47,7 +47,7 @@
                         {% if task.tag.values %}
                             Tag{{ task.tag.values|pluralize }}:
                             {% for tag in task.tag.values %}
-                                #{{ tag.name }};
+                                <a class="btn-link" href="{% url 'todo_list:tag-update' pk=tag.id %}">#{{ tag.name }};</a>
                             {% endfor %}
                             <br>
                             <a class="btn-link" href="{% url 'todo_list:task-update' pk=task.id %}">Update</a>

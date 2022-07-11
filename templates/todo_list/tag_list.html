@@ -16,14 +16,14 @@
                         {{ tag.name }}
                     </td>
                     <td>
-                        <button style="float: right; margin-top: 10px; margin-left: 5px; min-width: 10em"
+                        <button style="float: right;"
                                 class="btn btn-primary btn-sm"
                                 type="button">
                             <a style="color: white; text-decoration: none;" href="{% url 'todo_list:tag-update' pk=tag.id %}">Update</a>
                         </button>
                     </td>
                     <td>
-                        <button style="float: right; margin-top: 10px; margin-left: 5px; min-width: 10em"
+                        <button style="float: right;"
                                 class="btn btn-danger btn-sm"
                                 type="button">
                             <a style="color: white; text-decoration: none;" href="{% url 'todo_list:tag-delete' pk=tag.id %}">Delete</a>
